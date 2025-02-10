@@ -74,11 +74,11 @@ You can run multiple bots in a same instance, for now it only works for pure pyt
 ---
 
 ## ⚡ ***Deploy***
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/MysteryDemon/BotClusters/tree/FFMPEG)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/MysteryDemon/BotClusters/tree/master)
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/MysteryDemon/BotClusters/tree/FFMPEG)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/MysteryDemon/BotClusters/tree/master)
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=dockerfile&repository=github.com/mysterydemon/BotClusters&branch=FFMPEG&name=botclusters&ports=5000;http;/&env[CLUSTER_01]=)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=dockerfile&repository=github.com/mysterydemon/BotClusters&branch=master&name=botclusters&ports=5000;http;/&env[CLUSTER_01]=)
 
 ---
 
