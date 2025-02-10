@@ -300,12 +300,13 @@ def manage_supervisor_process(action, process_name):
                     
                     result = run_supervisor_command("stop", process_name)
                     if result["status"] == "success":
+                        backup_path = config_path.with_suffix(".bak")
+                        config_path.rename(backup_path)
                         config_path.unlink() 
                         subprocess.run(["supervisorctl", "reread"], check=True)
                         subprocess.run(["supervisorctl", "update"], check=True)
                         time.sleep(2)
-                        with open(config_path, 'w') as f:
-                            f.write(current_config)
+                        backup_path.rename(config_path)
                         subprocess.run(["supervisorctl", "reread"], check=True)
                         subprocess.run(["supervisorctl", "update"], check=True)
                         result = run_supervisor_command("start", process_name)
