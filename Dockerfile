@@ -1,14 +1,8 @@
 FROM python:3.10-slim-bullseye
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    g++ \
-    make \
-    python3-dev \
-    git \
-    supervisor \
-    && rm -rf /var/lib/apt/lists/*
-    
+RUN apt-get update && apt-get install -y --no-install-recommends  
+RUN apt-get install -y gcc python3-dev mediainfo libsm6 libxext6 libfontconfig1 libxrender1 libgl1-mesa-glx g++ make wget pv jq git supervisor && rm -rf /var/lib/apt/lists/*
+   
 ENV SUPERVISORD_CONF_DIR=/etc/supervisor/conf.d
 ENV SUPERVISORD_LOG_DIR=/var/log/supervisor
 
