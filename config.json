@@ -2,12 +2,12 @@
     "clusters": [
         {
             "name": "CLUSTER_01",
-            "details": "${["bot01", "https://github.com/mysterydemon/botcluster.git", "main", "bot.py", {"PORT": "8787"}]}"
+            "details": "${["bot01", "", "main", "bot.py", {"PORT": "8787"}]}"
         },
         
         {
             "name": "CLUSTER_02",
-            "details": "${["bot01", "https://github.com/mysterydemon/botcluster.git", "main", "bot.py", {"PORT": "8787"}]}"
+            "details": "${["bot01", "", "main", "bot.py", {"PORT": "8787"}]}"
         }
     ]
 }
